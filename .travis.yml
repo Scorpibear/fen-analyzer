@@ -1,0 +1,4 @@
+install:
+  - npm install -g codecov
+script:
+  - jest --coverage && codecov
