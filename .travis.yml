@@ -4,5 +4,7 @@ node_js:
   - "8"
 install:
   - npm install -g codecov
+before_script:
+  - npm install
 script:
   - jest --coverage && codecov
