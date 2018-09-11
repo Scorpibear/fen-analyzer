@@ -1,10 +1,11 @@
 {
   "name": "fen-analyzer",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Chess FEN (Forsyth-Edwards Notation) positions analyzer. Having FEN as input helps to identify, e.g. how many pieces left on the board",
   "main": "main.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "tdd": "jest --watch"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,7 @@
     "pieces"
   ],
   "author": "Mikhail Subach",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/Scorpibear/fen-analyzer/issues"
   },

@@ -5,7 +5,8 @@ Chess FEN (Forsyth-Edwards Notation) positions analyzer. Having FEN as input hel
 ```javascript
 const fenAnalyzer = require('fen-analyzer');
 
-let piecesCount = fenAnalyzer.getPiecesCount('rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1')
+const piecesCount = fenAnalyzer.getPiecesCount('rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1') // 32
 
-console.log(piecesCount); // 32
+const isBlack = fenAnalyzer.isBlack('rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1') // false
+
 ```

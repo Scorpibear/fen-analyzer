@@ -11,3 +11,12 @@ describe('getPiecesCount', () => {
     expect(() => {fenAnalyzer.getPiecesCount('1.d4 d5')}).toThrowError(/Incorrect FEN was provided/);
   });
 });
+
+describe('isBlack', () => {
+  test('returns true for black position', () => {
+    expect(fenAnalyzer.isBlack('rnbqkbnr/ppp1pppp/8/3p4/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2')).toBeTruthy();
+  });
+  test('returns false for white position', () => {
+    expect(fenAnalyzer.isBlack('rnbqkbnr/ppp1pppp/8/3p4/4P3/8/PPPP1PPP/RNBQKBNR w KQkq d6 0 2')).toBeFalsy();
+  });
+});
