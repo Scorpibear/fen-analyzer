@@ -1,6 +1,6 @@
 {
   "name": "fen-analyzer",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Chess FEN (Forsyth-Edwards Notation) positions analyzer. Having FEN as input helps to identify, e.g. how many pieces left on the board",
   "main": "main.js",
   "scripts": {
