@@ -25,7 +25,9 @@
   },
   "homepage": "https://github.com/Scorpibear/fen-analyzer#readme",
   "devDependencies": {
-    "eslint": "^4.7.1",
-    "jest": "^21.1.0"
+    "eslint": "^6.2.2",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "jest": "^25.0.0"
   }
 }
