@@ -40,4 +40,7 @@ describe('normalize', () => {
     const fen = 'rnbqkb1r/pp1ppppp/5n2/2pP4/8/8/PPP1PPPP/RNBQKBNR w KQkq c6 0 3';
     expect(fenAnalyzer.normalize(fen)).toEqual(fen);
   });
+  test('throws error if it is not a FEN', () => {
+    expect(() => { fenAnalyzer.normalize(null); }).toThrowError(/Incorrect FEN was provided/);
+  });
 });
